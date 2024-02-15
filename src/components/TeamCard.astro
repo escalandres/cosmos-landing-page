@@ -1,0 +1,25 @@
+---
+interface Props {
+  name: string;
+  body: string;
+  position: string;
+  img: string;
+}
+
+const { name, position, body, img } = Astro.props;
+---
+
+<div
+  class="bg-white border border-solid border-gray-300 rounded-lg shadow-xl py-12"
+>
+  <img src={img} class="mx-auto" />
+  <div class="justify-center px-16">
+    <h3 class="text-center text-2xl text-[#5D5A88] font-bold my-4">{name}</h3>
+    <div class="text-center">
+      <span class="inline-block text-[#8D8BA7]">{position}</span>
+    </div>
+    <p class="text-center mt-4 text-[#9795B5]">
+      {body}
+    </p>
+  </div>
+</div>

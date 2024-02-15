@@ -5,6 +5,7 @@ import Minuta from "../components/Minuta.astro";
 import Location from "../components/icons/Location.astro";
 import Shield from "../components/icons/Shield.astro";
 import Planet from "../components/icons/Planet.astro";
+import TeamCard from "../components/TeamCard.astro";
 ---
 
 <Layout title="Cosmos | Homepage">
@@ -151,31 +152,57 @@ import Planet from "../components/icons/Planet.astro";
           </div>
         </div>
       </div>
-      <SectionContainer class="" id="epilogo">
-        <div class="relative">
-          <img
-            src="/techo.webp"
-            alt="Techo de palacio de bellas artes"
-            class="w-full h-full object-cover"
+    </SectionContainer>
+    <SectionContainer id="team" class="bg-[#DCDDEB]">
+      <div class="mx-auto px-10 py-40">
+        <h1 class="text-6xl text-center font-bold my-16 text-[#2B3441]">
+          NUESTRO EQUIPO
+        </h1>
+        <div class="grid grid-cols-3 gap-8 px-12 py-8">
+          <TeamCard
+            name="Fernanda López"
+            position="CEO"
+            body="Emprendedora, generadora de ideas, políglota."
+            img="/img.svg"
           />
-          <div
-            class="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center"
-          >
-            <div class="text-white text-center px-80">
-              <p class="text-4xl font-bold text-center my-16">
-                En Cosmos, nos enorgullece formar parte del mundo del arte,
-                contribuyendo al legado cultural de las obras.
-              </p>
-              <p class="text-4xl my-16 text-center">
-                Nos esforzamos por ser aliados confiables y respetados para los
-                artistas, asegurando que sus creaciones perduren en el tiempo y
-                compartan su belleza y significado con las generaciones
-                venideras.
-              </p>
-            </div>
+          <TeamCard
+            name="Carlos Elizondo"
+            position="CMO"
+            body="Carismático, alegre, amante de la creatividad."
+            img="/img.svg"
+          />
+          <TeamCard
+            name="Andrés Escala"
+            position="CTO"
+            body="Analítico, calculador y trabajador."
+            img="/img.svg"
+          />
+        </div>
+      </div>
+    </SectionContainer>
+    <SectionContainer class="" id="epilogo">
+      <div class="relative">
+        <img
+          src="/techo.webp"
+          alt="Techo de palacio de bellas artes"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center"
+        >
+          <div class="text-white text-center px-80">
+            <p class="text-4xl font-bold text-center my-16">
+              En Cosmos, nos enorgullece formar parte del mundo del arte,
+              contribuyendo al legado cultural de las obras.
+            </p>
+            <p class="text-4xl my-16 text-center">
+              Nos esforzamos por ser aliados confiables y respetados para los
+              artistas, asegurando que sus creaciones perduren en el tiempo y
+              compartan su belleza y significado con las generaciones venideras.
+            </p>
           </div>
         </div>
-      </SectionContainer>
+      </div>
     </SectionContainer>
   </main>
 </Layout>
