@@ -4,9 +4,10 @@ interface Props {
   body: string;
   position: string;
   img: string;
+  description: string;
 }
 
-const { name, position, body, img } = Astro.props;
+const { name, position, body, img, description } = Astro.props;
 ---
 
 <div
@@ -16,6 +17,7 @@ const { name, position, body, img } = Astro.props;
     src={img}
     class="mx-auto"
     style="border-radius: 50%; width: 20rem; height: 20rem;"
+    alt={description}
   />
   <div class="justify-center px-16">
     <h3 class="text-center text-2xl text-[#5D5A88] font-bold my-4">{name}</h3>
