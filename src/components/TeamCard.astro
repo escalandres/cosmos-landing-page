@@ -18,6 +18,7 @@ const { name, position, body, img, description } = Astro.props;
     class="mx-auto"
     style="border-radius: 50%; width: 20rem; height: 20rem;"
     alt={description}
+    onerror="this.src='/assets/default-img.svg'"
   />
   <div class="justify-center px-16">
     <h3 class="text-center text-2xl text-[#5D5A88] font-bold my-4">{name}</h3>
