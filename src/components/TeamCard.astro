@@ -12,7 +12,11 @@ const { name, position, body, img } = Astro.props;
 <div
   class="bg-white border border-solid border-gray-300 rounded-lg shadow-xl py-12"
 >
-  <img src={img} class="mx-auto" />
+  <img
+    src={img}
+    class="mx-auto"
+    style="border-radius: 50%; width: 20rem; height: 20rem;"
+  />
   <div class="justify-center px-16">
     <h3 class="text-center text-2xl text-[#5D5A88] font-bold my-4">{name}</h3>
     <div class="text-center">
