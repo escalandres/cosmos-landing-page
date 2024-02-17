@@ -15,8 +15,7 @@ const { name, position, body, img, description } = Astro.props;
 >
   <img
     src={img}
-    class="mx-auto"
-    style="border-radius: 50%; width: 20rem; height: 20rem;"
+    class="team-card__image mx-auto"
     alt={description}
     onerror="this.src='/assets/default-img.svg'"
   />
