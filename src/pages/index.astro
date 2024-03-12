@@ -18,12 +18,12 @@ import TeamCard from "../components/TeamCard.astro";
           class="w-full h-full object-cover"
         />
         <div
-          class="absolute top-40 left-40 md:w-1/2 md:h-1/2 lg:w-1/3 lg:h-1/2"
+          class="absolute top-40 left-40 md:w-1/2 md:h-1/2 lg:w-1/2 xl:w-1/[1/2]"
         >
-          <h1 class="text-white text-6xl font-bold text-left tracking-wider">
+          <h1 class="text-white text-6xl font-bold text-left letter-spacing">
             Proteje tu arte en cada rincón del universo
           </h1>
-          <span class="text-[#9795B5] text-left block my-8">
+          <span class="text-[#9795B5] text-left block my-8 xl: text-2xl">
             Diseños que brindan protección total a tus obras para que puedas
             llevarlas a cualquier lugar de forma práctica y segura.
           </span>
@@ -41,7 +41,11 @@ import TeamCard from "../components/TeamCard.astro";
         <h3 class="cosmos-orange-text text-4xl text-center mb-8">
           Bienvenido a
         </h3>
-        <h1 class="cosmos-orange-text text-8xl text-center mb-16">COSMOS</h1>
+        <h1
+          class="cosmos-orange-text text-8xl text-center mb-16 big-letter-spacing"
+        >
+          COSMOS
+        </h1>
         <p class="text-center text-[#2B3441] text-lg my-8">
           En Cosmos, combinamos tecnología y pasión por el arte para ofrecer
           soluciones sociales y ambientales para el mundo cultural. Nos
@@ -56,7 +60,7 @@ import TeamCard from "../components/TeamCard.astro";
           generar un impacto social global.
         </p>
       </div>
-      <div class="mt-20 mb-2">
+      <div class="mt-20 mb-2 flex justify-center">
         <Minuta />
       </div>
     </SectionContainer>
@@ -74,7 +78,9 @@ import TeamCard from "../components/TeamCard.astro";
             >
               Hacia un Futuro sin Daños
             </h1>
-            <p class="text-white block my-8 text-center">
+            <p
+              class="text-white block mt-32 text-center lg: text-2xl xl: text-3xl"
+            >
               Soluciones de logística eco-conscientes con embalajes retornables
               y una plataforma digital. Nuestra tecnología asegura el transporte
               seguro de obras de arte además de proporcionar seguimiento en
@@ -89,7 +95,7 @@ import TeamCard from "../components/TeamCard.astro";
       <div class="bg-[#050507] flex">
         <div class="md:w-1/3 px-20 py-20">
           <h1
-            class="text-8xl text-[#DCDDEB] font-bold mb-4 text-left tracking-wider"
+            class="text-[#DCDDEB] font-bold mb-4 text-left tracking-wider text-base sm:text-lg md:text-xl lg:text-4xl xl:text-8xl"
           >
             Tu arte siempre bajo nuestra protección
           </h1>
@@ -172,7 +178,7 @@ import TeamCard from "../components/TeamCard.astro";
             name="Carlos Elizondo"
             position="CMO"
             body="Carismático, alegre, amante de la creatividad."
-            img="/assets/img.svg"
+            img="/img/team/carlos.webp"
             description="Carlos Elizondo - CMO"
           />
           <TeamCard
@@ -195,12 +201,12 @@ import TeamCard from "../components/TeamCard.astro";
         <div
           class="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center"
         >
-          <div class="text-white text-center px-80">
+          <div class="text-white text-center px-60">
             <p class="text-4xl font-bold text-center my-16">
               En Cosmos, nos enorgullece formar parte del mundo del arte,
               contribuyendo al legado cultural de las obras.
             </p>
-            <p class="text-4xl my-16 text-center">
+            <p class="text-4xl font-bold my-16 text-center">
               Nos esforzamos por ser aliados confiables y respetados para los
               artistas, asegurando que sus creaciones perduren en el tiempo y
               compartan su belleza y significado con las generaciones venideras.
