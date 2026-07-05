@@ -18,6 +18,7 @@
     "typescript": "^5.3.3"
   },
   "engines": {
-    "node": ">=24"
-  }
+    "node": "24.x"
+  },
+  "packageManager": "pnpm@10.17.0"
 }
